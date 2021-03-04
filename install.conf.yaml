@@ -1,0 +1,18 @@
+- clean: ['~']
+
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+    ~/.zprofile: zprofile
+    ~/.zshenv: zshenv
+    ~/.zshrc: zshrc
+    ~/.zimrc: zimrc
+    ~/.config/zsh/abbreviations: zsh_abbr_config
+    ~/.config/starship.toml: starship.toml
+    ~/.condarc: condarc
+    ~/.jupyter/lab/user-settings/@jupyterlab: jupyterlab_user_settings
+    
+  
+

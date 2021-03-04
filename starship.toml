@@ -1,0 +1,34 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$docker_context\
+$golang\
+$helm\
+$python\
+$conda\
+$memory_usage\
+$env_var\
+$cmd_duration\
+$line_break\
+$jobs\
+$time\
+$status\
+$character"""
+
+add_newline = false
+
+[character] 
+
+success_symbol = "[∆](bold green) "
+error_symbol = "[∆](bold red) "
+
+[python]
+
+python_binary = ["python3"]
