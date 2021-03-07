@@ -148,8 +148,13 @@ conda config --set auto_activate_base false
 # export CLICOLOR=1
 
 export LC_ALL=en_US.UTF-8
-export MANPATH=/opt/homebrew/opt/coreutils/libexec/gnuman:/usr/local/man:$(manpath)
-export PATH=~/.local/bin:$PATH # /opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
+
+case "$OSTYPE" in
+  darwin*)
+  export MANPATH=/opt/homebrew/opt/coreutils/libexec/gnuman:/usr/local/man:$(manpath)
+  export PATH=~/.local/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH
+  ;;
+esac
 
 export EDITOR='vim'
 export VISUAL='vim'

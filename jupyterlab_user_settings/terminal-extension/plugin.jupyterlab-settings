@@ -1,3 +1,18 @@
 {
+    // Terminal
+    // @jupyterlab/terminal-extension:plugin
+    // Terminal settings.
+    // *************************************
+
+    // Font size
+    // The font size used to render text.
     "fontSize": 14,
+
+    // Theme
+    // The theme for the terminal.
+    "theme": "dark",
+
+    // Font family
+    // The font family used to render text.        
+    "fontFamily": "Fira Mono",
 }
