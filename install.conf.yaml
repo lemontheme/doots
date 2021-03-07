@@ -1,18 +1,35 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
+        # ~/.bash_profile: bash_profile
+        # ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
-    ~/.tmux.conf: tmux.conf
-    ~/.zprofile: zprofile
-    ~/.zshenv: zshenv
-    ~/.zshrc: zshrc
-    ~/.zimrc: zimrc
-    ~/.config/zsh/abbreviations: zsh_abbr_config
+    ~/.tmux.conf: 
+        path: tmux.conf
+        force: true
+    ~/.zprofile: 
+        path: zprofile
+        force: true
+    ~/.zshenv: 
+        path: zshenv
+        force: true
+    ~/.zshrc: 
+        path: zshrc
+        force: true
+    ~/.zimrc:
+        path: zimrc
+        force: true
+    ~/.config/zsh/abbreviations:
+        path: zsh_abbr_config
+        create: true
     ~/.config/starship.toml: starship.toml
-    ~/.condarc: condarc
-    ~/.jupyter/lab/user-settings/@jupyterlab: jupyterlab_user_settings
+    ~/.condarc: 
+        path: condarc
+        force: true
+    ~/.jupyter/lab/user-settings/@jupyterlab: 
+        path: jupyterlab_user_settings
+        create: true
+        force: true
     
   
 
