@@ -52,4 +52,5 @@ zmodule esc/conda-zsh-completion
 
 # crashes on init
 # zmodule softmoth/zsh-vim-mode
+
 # zmodule jeffreytse/zsh-vi-mode
