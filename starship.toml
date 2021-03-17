@@ -26,8 +26,10 @@ add_newline = false
 
 [character] 
 
-success_symbol = "[∆](bold green) "
-error_symbol = "[∆](bold red) "
+# success_symbol = "[∆](bold green) "
+# error_symbol = "[∆](bold red) "
+success_symbol = "[><>](bold green) "
+error_symbol = "[><>](bold red) "
 
 [python]
 
@@ -36,3 +38,9 @@ python_binary = ["python3"]
 [conda]
 
 ignore_base = false
+
+[git_status]
+
+# Prompt becomes unusably slow when working in a git 
+# repo over sshfs.
+disabled = true
