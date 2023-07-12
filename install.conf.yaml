@@ -7,9 +7,6 @@
       create: true
 
 - link:
-    # ~/.gitconfig: gitconfig
-    ~/.config/zsh/abbreviations: zsh_abbr_config
-    # ~/.condarc: condarc
     ~/.config/: 
       path: dotconfs/config/*
       glob: true
@@ -19,7 +16,6 @@
       glob: true
       exclude: ['dotconfs/config']
 
-
   
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
+        # - shell:
+        #     - [git submodule update --init --recursive, Installing submodules]
