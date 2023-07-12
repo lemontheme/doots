@@ -1,33 +1,25 @@
-- clean: ['~']
+# Install with https://github.com/anishathalye/dotbot
+
+- clean: ["~"]
+- defaults:
+    link:
+      relink: true
+      create: true
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.tmux.conf: 
-        path: tmux.conf
-        force: true
-    ~/.zprofile: 
-        path: zprofile
-        force: true
-    ~/.zshenv: 
-        path: zshenv
-        force: true
-    ~/.zshrc: 
-        path: zshrc
-        force: true
-    ~/.zimrc:
-        path: zimrc
-        force: true
-    ~/.config/zsh/abbreviations:
-        path: zsh_abbr_config
-        create: true
-    ~/.config/starship.toml: starship.toml
-    ~/.condarc: 
-        path: condarc
-        force: true
-    ~/.jupyter/lab/user-settings/@jupyterlab: 
-        path: jupyterlab_user_settings
-        create: true
-        force: true
-    
-  
+    # ~/.gitconfig: gitconfig
+    ~/.config/zsh/abbreviations: zsh_abbr_config
+    # ~/.condarc: condarc
+    ~/.config/: 
+      path: dotconfs/config/*
+      glob: true
+    ~/:
+      path: dotconfs/*
+      prefix: '.'
+      glob: true
+      exclude: ['dotconfs/config']
 
+
+  
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

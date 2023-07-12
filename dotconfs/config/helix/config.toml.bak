@@ -1,0 +1,11 @@
+theme = "rose_pine_dawn"
+
+[editor]
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-messages = true
+

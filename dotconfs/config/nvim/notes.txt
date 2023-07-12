@@ -1,0 +1,2 @@
+:E x to go to netrw explorer
+:so Source the current file

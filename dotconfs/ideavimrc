@@ -1,0 +1,27 @@
+set surround
+# set multiple-cursors
+set commentary
+set easymotion
+
+# join command will be performed via IDE
+set ideajoin
+# creation of global mark will trigger creation of IDE's bookmark
+# and vice versa.
+set ideamarks
+# Make Ideavim icon gray
+set ideastatusicon=gray
+# Incremental search
+set incsearch
+
+set idearefactormode=keep
+
+# Workaround to ensure that zR expands all folds
+map zR :action ExpandAllRegions<CR>:action ExpandAllRegions<CR>
+
+imap jj <Esc>
+set timeoutlen=300
+
+let mapleader="\<Space>"
+
+:map <leader>t <Action>(Refactorings.QuickListPopupAction)
+

@@ -1,3 +1,0 @@
-@arbennett/base16-gruvbox-dark
-@krassowski/jupyterlab_go_to_definition
-@jupyter-server/resource-usage
