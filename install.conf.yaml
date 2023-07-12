@@ -15,7 +15,3 @@
       prefix: '.'
       glob: true
       exclude: ['dotconfs/config']
-
-  
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
